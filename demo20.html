@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS : Literals</title>
+    <style>
+      div {
+        margin: 50px;
+        border: 2px solid red;
+        border-radius: 15px;
+        width: 500px;
+        font-size: 25px;
+        background-color: goldenrod;
+        padding-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+    <script>
+      function myprint(data) {
+        var mydiv = document.getElementById('mydiv');
+        console.log(mydiv);
+        mydiv.innerHTML = mydiv.innerHTML + data + '<br/>';
+      }
+      myprint('<u> Literals </u> ');
+      x = 101;
+      myprint(x);
+      x = 0101;
+      myprint(x);
+      x = 0x101;
+      myprint(x);
+      x = 0b101;
+      myprint(x);
+      myprint('-------------');
+      x = 9.9;
+      myprint(x);
+      x = 9.999e2;
+      myprint(x);
+      myprint('-------------');
+      x = true;
+      myprint(x);
+      x = false;
+      myprint(x);
+      myprint('-------------');
+      x = 'Hello';
+      myprint(x);
+      x = 'A';
+      myprint(x);
+      x = '\u0041';
+      myprint(x);
+      x = '\u0041\u0042';
+      myprint(x);
+      x = '\101';
+      myprint(x);
+      x = '\101';
+      myprint(x);
+      x = '\101\102';
+      myprint(x);
+      myprint('Done');
+    </script>
+  </body>
+</html>

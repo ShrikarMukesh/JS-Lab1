@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome To JS World!!!</title>
+    <style>
+        h1,div,input{
+           font-size: 20px;
+           font-family: Cambria;
+           border-radius: 15px;
+           border: 2px solid red;
+           margin: 50px;
+           height: 50px;
+           width: 500px;
+           background-color: goldenrod;
+           text-align: center;
+           padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="hello">Hello World</h1>
+    <div id="hai">Whats up guys</div>
+
+    <input type="button" value="Change Text" onclick="changeTest()"/>
+
+      
+     <script>
+          function changeTest(){
+              var figma = document.getElementById("hello");
+              console.log(figma.innerHTML);
+              figma.innerHTML = "Welcome to coursecube !!!"
+              console.log(figma.innerHTML)
+
+              var hai = document.getElementById("hai");
+              console.log(hai.innerHTML);
+              hai.innerHTML = hai.innerHTML + "OK!!!"
+              console.log(hai.innerHTML)
+          }
+     </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome To JS World!!!</title>
+    <style>
+      div {
+        margin: 50px;
+        border: 2px solid red;
+        border-radius: 15px;
+        width: 500px;
+        font-size: 25px;
+        background-color: goldenrod;
+        padding-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+    <script>
+      function myprint(data) {
+        var mydiv = document.getElementById('mydiv');
+        mydiv.innerHTML = mydiv.innerHTML + data + '<br/>';
+      }
+      myprint('<u>1. Data Types<br/></u>');
+      var a = 10;
+      myprint(a);
+      myprint(typeof a);
+
+      const flag = false;
+      myprint(typeof flag);
+      myprint(flag);
+
+      var arr = [12, 2, 34];
+      myprint(arr);
+      myprint(typeof arr);
+
+      var myname = 'Srinivas';
+      myprint(myname);
+      myprint(typeof myname);
+
+      var mydob = new Date();
+      myprint(mydob);
+      myprint(typeof mydob);
+    </script>
+  </body>
+</html>

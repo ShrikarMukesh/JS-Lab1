@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variable Scope</title>
+    <style>
+      div {
+        margin: 50px;
+        border: 2px solid red;
+        border-radius: 15px;
+        width: 500px;
+        font-size: 25px;
+        background-color: goldenrod;
+        padding-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+    <script>
+      function myprint(data) {
+        var mydiv = document.getElementById('mydiv');
+        mydiv.innerHTML = mydiv.innerHTML + data + '<br/>';
+      }
+      myprint('<u> Variable Scope <br/></u>'); //1
+      var x = 10; //Global Scope //2
+      function show() {
+        //Function Definition
+        var y = 20; //Function Scope
+        if (true) {
+          let z = 30; //Block Scope
+          myprint('Inside If- x = ' + x);
+          myprint('Inside If- y = ' + y);
+          //myprint('Inside If- z = ' + z);
+        }
+        myprint('After If- x = ' + x);
+        myprint('After If- y = ' + y);
+        //myprint('After If- z = ' + z);
+      }
+      show(); //Function Call //3
+      myprint('Outside show()- x = ' + x); //4
+      //myprint('Outside show()- y = ' + y);
+      //myprint('Outside show()- z = ' + z);
+    </script>
+  </body>
+</html>

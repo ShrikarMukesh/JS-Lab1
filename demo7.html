@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Types and Variables</title>
+    <style>
+      div {
+        margin: 50px;
+        border: 2px solid red;
+        border-radius: 15px;
+        width: 500px;
+        font-size: 25px;
+        background-color: goldenrod;
+        padding-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+    <script>
+      function myprint(data) {
+        var mydiv = document.getElementById('mydiv');
+        mydiv.innerHTML = mydiv.innerHTML + data + '<br/>';
+      }
+      myprint('<u> Variables<br/></u>');
+      var x = 10;
+      myprint(x);
+      var x = 'Hello Guys';
+      myprint(x);
+      let y = 20;
+      myprint(y);
+      //let y = 'Hai Guys'; //Error
+      y = 'Hai Guys';
+      myprint(y);
+    </script>
+  </body>
+</html>
